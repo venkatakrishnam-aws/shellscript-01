@@ -1,7 +1,7 @@
 #!/bin /bash
 
 echo "Please enter your username and password:"
-read  username
+read -s git username
 
 echo "username is: $username"
 
