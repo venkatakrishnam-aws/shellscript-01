@@ -8,5 +8,5 @@ echo "Please enter your password:"
 read -s password
 echo "username is: $username and password is: $password"
 
-echo "Current date and time: $date , $time)"
+echo "Current date and time: $date $time"
 
