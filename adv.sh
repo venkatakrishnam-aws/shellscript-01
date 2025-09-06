@@ -19,3 +19,14 @@ then
     systemctl start mysqld
     systemctl enable mysqld
     echo "MySQL server installed and started"
+
+    yum install git -y
+        if [ $? -ne 0 ]; then
+        echo "Error: git installation failed"
+        exit 1
+    else 
+    echo "git installation successful"
+    fi
+    systemctl start git
+    systemctl enable git
+    echo "git installed and started"
