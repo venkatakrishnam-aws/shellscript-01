@@ -15,8 +15,8 @@ then
     else "Running with root access"
     fi
 
-    yum install mysql-server -y
-    validate ( $? , install mysql server )
+    yum install mysql -y
+    validate ( $? "install mysql server" )
     
-    yum install git -y
-    validate ( $? , install git )
+    yum install httpd -y
+    validate ( $? "install httpd server" )
