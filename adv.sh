@@ -10,7 +10,13 @@ then
     fi
 
     yum install mysql-server -y
+        if [ $? -ne 0 ]; then
+        echo "Error: MySQL installation failed"
+        exit 1
+    fi
+    else 
+    echo "MySQL installation successful"
+    fi
     systemctl start mysqld
     systemctl enable mysqld
     echo "MySQL server installed and started"
-    
