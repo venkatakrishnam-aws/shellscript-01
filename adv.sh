@@ -26,7 +26,4 @@ then
         exit 1
     else
     echo "git installation is successful"
-    systemctl start git
-    systemctl enable git
-    echo "git installed and started"
     fi
