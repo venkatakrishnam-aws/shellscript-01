@@ -5,7 +5,7 @@ ID=$(id -u)
 validate() {
   if [ $1 -ne 0 ]; then
     echo "Error: $2 ... failed"
-    exit 1
+    exit
   else
     echo "$2 ... successful"
   fi
