@@ -15,7 +15,6 @@ then
         exit 1
     else 
     echo "MySQL installation successful"
-    
     systemctl start mysqld
     systemctl enable mysqld
     echo "MySQL server installed and started"
@@ -26,4 +25,7 @@ then
         exit 1
     else
     echo "git installation is successful"
+    systemctl start git
+    systemctl enable git
+    echo "git installed and started successfully"
     fi
