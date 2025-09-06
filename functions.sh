@@ -15,7 +15,7 @@ then
     echo "Please run as root"
     exit
 else 
-    echo"Running with root access"
+    echo "Running with root access"
 fi
 
     yum install mysql -y
