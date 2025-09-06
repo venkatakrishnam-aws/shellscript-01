@@ -15,18 +15,18 @@ then
         exit 1
     else 
     echo "MySQL installation successful"
-    fi
+    
     systemctl start mysqld
     systemctl enable mysqld
     echo "MySQL server installed and started"
-
+    fi    
     yum install git -y
         if [ $? -ne 0 ]; then
         echo "Error: git installation failed"
         exit 1
-    else 
+    else
     echo "git installation is successful"
-    fi
     systemctl start git
     systemctl enable git
     echo "git installed and started"
+    fi
