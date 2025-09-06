@@ -14,7 +14,8 @@ if [ "$ID" -ne 0 ]
 then
     echo "Please run as root"
     exit
-else "Running with root access"
+else 
+    echo"Running with root access"
 fi
 
     yum install mysql -y
