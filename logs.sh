@@ -2,6 +2,9 @@
 
 ID=$(id -u)
 
+timestamp=$(date '+%Y-%m-%d %H:%M:%S')
+logfile="tmp/logfile.log"
+
 echo "scriptname : $0"
 
 validate() {
@@ -20,8 +23,8 @@ else
     echo "Running with root access"
 fi
 
-    yum install mysql -y
+    yum install mysql -y   &>> logfile.log
     validate  $? "installing mysql server"  
     
-    yum install httpd -y
+    yum install httpd -y   &>> logfile.log
     validate  $? "installing httpd server" 
