@@ -16,7 +16,7 @@ then
     fi
 
     yum install mysql -y
-    validate ( $? "install mysql server" )
+    VALIDATE  $? "install mysql server"  
     
     yum install httpd -y
-    validate ( $? "install httpd server" )
+    VALIDATE  $? "install httpd server" 
