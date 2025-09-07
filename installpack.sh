@@ -34,7 +34,7 @@ for package in "$@" ; do
     yum list installed $package
     if [ $? -ne 0 ]; then
     yum install $package -y
-    validate( $? , "Installing the $package")
+    validate( $? "Installing the $package")
     else echo -e "$Y Warning:: $package is already installed $N"
     fi
 done
