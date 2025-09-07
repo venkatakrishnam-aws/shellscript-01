@@ -11,7 +11,7 @@ if [ "$id" -ne 0 ]; then
     echo -e "$R Error:: Please run as root $N"
     exit
 else
-    echo -e "$G Running as root $G"
+    echo -e "$G Success:: Running as root"
 fi
 
 echo "All the arguments passed to the script are: $@"
